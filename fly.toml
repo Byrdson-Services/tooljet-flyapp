@@ -4,7 +4,7 @@ kill_signal = 'SIGTERM'
 kill_timeout = '2m0s'
 
 [build]
-  image = 'tooljet/tooljet-ce:v3.20.112-lts'
+  image = 'tooljet/tooljet-ce:v3.20.156-lts'
 
 #[deploy]
 #  release_command = 'npm run db:setup:prod'
@@ -23,7 +23,6 @@ kill_timeout = '2m0s'
   WORKER = 'false'
   DISABLE_SIGNUPS = 'true'
   DEPLOYMENT_PLATFORM = 'docker'
-  NODE_TLS_REJECT_UNAUTHORIZED = '0'
 
 [http_service]
   internal_port = 8080
