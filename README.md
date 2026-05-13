@@ -2,7 +2,7 @@
 ToolJet self-hosted instance hosted on fly.io made especially for Byrdson Services' tech team.
 
 ## fly.io Deployment
-1. Create a Supabase Postgres database.
+1. Create a Neon Postgres database.
 2. Comment out `DISABLE_SIGNUPS` on fly.toml.
 3. `fly launch --copy-config --no-deploy --org byrdson-services`
 4. `git restore fly.toml`
@@ -24,4 +24,5 @@ DATABASE_URL=
 TOOLJET_DB_URL=
 PGRST_DB_URI=
 PGRST_JWT_SECRET=
+SAMPLE_DB_URL=
 ```
